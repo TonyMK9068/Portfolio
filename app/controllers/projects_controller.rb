@@ -18,4 +18,20 @@ class ProjectsController < ApplicationController
       end
     end
 	end
+
+	def edit
+		@project_item = Project.find(params[:id])
+	end
+  
+  def update
+  	@project_item = Project.find(params[:id])
+
+    respond_to do |format|
+      if @project_item.update(params.require(:project).permit(:title, :subtitle, :body))
+        format.html { redirect_to projects_path, notice: 'Project was successfully updated.' }
+      else
+        format.html { render :edit }
+      end
+    end
+  end
 end
