@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
-	def index
+	layout "project"
+
+  def index
 		@project_items = Project.all
 	end
 
