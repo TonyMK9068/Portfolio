@@ -28,6 +28,7 @@ class ProjectsController < ApplicationController
 
 	def edit
 		@project_item = Project.find(params[:id])
+    3.times { @project_item.technologies.build }
 	end
   
   def update
