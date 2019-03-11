@@ -56,7 +56,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4' 
 gem 'devise', '~> 4.5'
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'tony_correia_view_tool', git: 'https://github.com/TonyMK9068/tony_correia_view_tool'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
